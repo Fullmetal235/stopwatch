@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6; 
+  background: #001f3f;
+  color: #fff;
+  min-height: 90vh;
+}
+.head {
+  text-align: center;
+  color: whitesmoke;
+  background: #0097a7;
+  padding: 2rem;
+  border-bottom: 2px solid #ff4500;
+}
+.head h1 {
+  font-size: 6rem;
+  letter-spacing: .4rem;
+}
+.head h1::first-letter {
+  color: #001f3f;
+  font-size: 7.5rem;
+}
+.head p {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: .3rem;
+  font-weight: 100;
+}
+#timer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 8rem auto;
+}
+.time {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 8rem;
+  grid-column-gap: 5rem;
+  font-size: 5rem;
+}
+#day, #hour, #minute, #second {
+  font-weight: 100;
+  font-family: 'Orbitron', sans-serif;
+}
+.buttons-container {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+#startStop {
+  margin-right: 1.8rem;
+}
+button {
+  text-align: center;
+  border:2px solid #ff4500;
+  background-color: #001f3f;
+  color: inherit;
+  letter-spacing: .4rem;
+  width: 15rem;
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  padding: 1.5rem;
+  outline: none;
+}
+.start:hover {
+  background: #008000;
+}
+.stop {
+  background: red;
+}
+.resume {
+  color: white;
+  background: orange;
+}
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 58.5%;
+  }
+  .head{
+    padding: 1.5rem;
+  }
+  .head h1 {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 472px) {
+  html {
+    font-size: 40.5%;
+  }
+  .head{
+    padding: 1rem;
+  }
+  .head h1 {
+    font-size: 4rem;
+  }
+}
